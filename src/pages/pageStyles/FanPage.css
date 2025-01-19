@@ -1,0 +1,13 @@
+.fan-section {
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .fan-section .head{
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }

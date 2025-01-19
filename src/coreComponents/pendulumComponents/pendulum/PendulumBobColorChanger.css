@@ -1,0 +1,70 @@
+.control-box-bob {
+    width: 400px;
+    height: 110px;
+    border-radius: 7px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    /* border: 1px solid #fff; */
+}
+
+.control-box-bob .btn-box {
+    display: flex;
+    gap: 1.4rem;
+}
+
+.control-box-bob .btn-box span {
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.control-box-bob .btn-box span.active {
+    transform: translateY(-10px);
+    border: 1px solid #fff;
+    font-weight: 500;
+}
+
+.control-box-bob .btn-box span.bgRed {
+    background-color: red;
+}
+
+.control-box-bob .btn-box span.bgRed:hover {
+    background-color: rgb(182, 3, 3);
+}
+
+.control-box-bob .btn-box span.bgYellow {
+    background-color: yellow;
+}
+
+.control-box-bob .btn-box span.bgYellow:hover {
+    background-color: rgb(194, 194, 1);
+}
+
+.control-box-bob .btn-box span.bgBwood {
+    background-color: burlywood;
+}
+
+.control-box-bob .btn-box span.bgBwood:hover {
+    background-color: rgb(212, 149, 66);
+}
+
+.control-box-bob .btn-box span.bgChoc {
+    background-color: chocolate;
+}
+
+.control-box-bob .btn-box span.bgChoc:hover {
+    background-color: rgb(163, 76, 13);
+}
+
+.control-box-bob .btn-box span.bgPurple {
+    background-color: purple;
+}
+
+.control-box-bob .btn-box span.bgPurple:hover {
+    background-color: rgb(83, 2, 83);
+}

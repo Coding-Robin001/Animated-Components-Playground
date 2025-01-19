@@ -1,0 +1,125 @@
+.pendulum-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: inherit;
+}
+
+.pendulum {
+  position: relative;
+  width: 10px;
+  height: 200px;
+  transform-origin: top center;
+  transition: transform 3s ease-in-out;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin-bottom: 3rem;
+}
+
+.pendulum .rod {
+  position: absolute;
+  width: 3px;
+  height: 200px;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pendulum .bob {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bobAnimation 1s ease-in-out infinite;
+}
+
+.pendulum .bob.red{
+  background-color: red;
+}
+
+.pendulum .bob.burlywood{
+  background-color: burlywood;
+}
+
+.pendulum .bob.chocolate{
+  background-color: chocolate;
+}
+
+.pendulum .bob.purple{
+  background-color: purple;
+}
+
+.pendulum .bob.yellow{
+  background-color: yellow;
+}
+
+/* Pendulum swing animation */
+@keyframes swingAnimation {
+  0% {
+    transform: rotate(65deg);
+  }
+
+  50% {
+    transform: rotate(-65deg);
+  }
+
+  100% {
+    transform: rotate(65deg);
+  }
+}
+
+@keyframes swingAnimationLeft {
+  0% {
+    transform: rotate(75deg);
+  }
+
+  50% {
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    transform: rotate(75deg);
+  }
+}
+
+@keyframes swingAnimationRight {
+  0% {
+    transform: rotate(-75deg);
+  }
+
+  50% {
+    transform: rotate(6deg);
+  }
+
+  100% {
+    transform: rotate(-75deg);
+  }
+}
+
+
+
+/* pendulum speed controls */
+.pendulum.swing {
+  animation: swingAnimation 3.5s ease-in-out infinite;
+}
+
+.pendulum.swing2 {
+  animation: swingAnimation 2.9s ease-in-out infinite;
+}
+
+.pendulum.swing3 {
+  animation: swingAnimation 1.5s ease-in-out infinite;
+}
+
+.pendulum.penA {
+  animation: swingAnimationLeft 2s ease-in-out alternate;
+}
+
+.pendulum.penB {
+  animation: swingAnimationRight 2s ease-in-out alternate-reverse;
+}

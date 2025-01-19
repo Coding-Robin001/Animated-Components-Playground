@@ -1,0 +1,246 @@
+.codeGeneratorContainer {
+    position: relative;
+}
+
+.codeGeneratorContainer h2 {
+    text-align: center;
+}
+
+.codeGeneratorContainer .mainColorBoxWrapper {
+    position: relative;
+    /* background-color: green; */
+    width: 450px;
+    margin: 0 auto;
+}
+
+.codeGeneratorContainer .hrLine {
+    width: 95%;
+    margin: 0 auto;
+    height: 1px;
+    margin-top: 2.5rem;
+    background-color: gray;
+    color: gray;
+}
+
+.codeGeneratorContainer .mainColorBox {
+    width: 350px;
+    height: 350px;
+    margin: 35px auto;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+
+.codeGeneratorContainer .prev {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.codeGeneratorContainer .next {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.codeGeneratorContainer .mainColorbtnBox {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.codeGeneratorContainer .mainColorbtnBox button {
+    /* background-color: #e74c3c; */
+    width: 140px;
+    padding: 12px 0;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.codeGeneratorContainer .mainColorbtnBox button.isPaused {
+    background-color: #2ecc71;
+}
+
+.codeGeneratorContainer .mainColorbtnBox button.isResumed {
+    background-color: #e74c3c;
+}
+
+.codeGeneratorContainer .mainColorbtnBox button.saveColor {
+    background-color: #3498db;
+}
+
+.codeGeneratorContainer .mainColorbtnBox button.copyCode {
+    background-color: chocolate;
+}
+
+
+.savedColorsBox {
+    margin: 40px 0 40px 0;
+    padding: 1.5rem 2rem 3rem 1.5rem;
+    border-bottom: 1px solid gray;
+}
+
+.savedColorsBox h2 {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.savedColorsBox .savedColorElements {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.savedColorsBox .savedColorElements .savedEl {
+    border: 1px solid #fff;
+    /* width: 70px; */
+    height: 80%;
+    margin: auto 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    color: #313030;
+    font-weight: 700;
+    padding: 1rem 2rem;
+}
+
+.savedColorsBox .savedColorElements .savedEl button {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.savedColorElements .savedElWrapper {
+    border: 1px solid #707070;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 4px;
+}
+
+.savedColorElements .savedElWrapper .savedElInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.savedColorElements .savedElWrapper .savedElInfo span {
+    color: #727272;
+    font-weight: bolder;
+}
+
+.savedColorElements .savedElWrapper .savedElInfo button {
+    width: 60px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #04045e;
+    border-radius: 3px;
+}
+
+.codeGeneratorContainer .editColorHead {
+    margin: 45px 0 25px 0;
+}
+
+.codeGeneratorContainer .editBox {
+    position: relative;
+    background-color: #fff;
+    width: 390px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-Color: #f9f9f9,
+}
+
+.codeGeneratorContainer .editBox .closeIcon {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.codeGeneratorContainer .editBox .closeIcon:hover {
+    transform: scale(1.2);
+}
+
+.codeGeneratorContainer .editBox .selectedColor {
+    width: 70%;
+    margin: auto;
+    height: 230px;
+    border-radius: 3px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.codeGeneratorContainer .editBox .editButtons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.codeGeneratorContainer .editBox .editButtons button {
+    width: 90px;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: #2ecc71;
+}
+
+.codeGeneratorContainer .editBox .editButtons button.saveColor {
+    background-color: #2ecc71;
+}
+
+.codeGeneratorContainer .editBox .editButtons button.darker {
+    background-color: #e74c3c;
+}
+
+.codeGeneratorContainer .editBox .editButtons button.lighter {
+    background-color: #f39c12;
+}
+
+.codeGeneratorContainer .hr {
+    width: 100%;
+    height: 1px;
+    color: #040d5f;
+    background-color: #040d5f;
+}

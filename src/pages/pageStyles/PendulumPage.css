@@ -1,0 +1,19 @@
+.pendulumSection {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pendulumSection .head{
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+}
+
+.box-flex{
+    display: flex;
+    gap: 1rem;
+}

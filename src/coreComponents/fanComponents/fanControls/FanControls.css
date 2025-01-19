@@ -1,16 +1,24 @@
-.control-box{
+.fan-control-box{
     width: 380px;
-    height: 110px;
+    height: 140px;
     border-radius: 7px;
     background-color: gray;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    /* border: 1px solid #fff; */
 }
 
-.control-box button{
+.fan-control-box h2 {
+    margin: 10px 0 20px 0;
+}
+
+.fan-control-box-btn{
+    display: flex;
+    gap: 1rem;
+}
+
+.fan-control-box button{
     width: 55px;
     height: 38px;
     cursor: pointer;
@@ -24,13 +32,13 @@
     border: 1px solid #0c3277;
 }
 
-.control-box button:hover{
+.fan-control-box button:hover{
     background-color: #1c56c0;
     color: #fff;
     border: 1px solid #b3b3b3;
 }
 
-.control-box button.active{
+.fan-control-box button.active{
     transform: translateY(-10px);
     background-color: #0c3277;
     color: #fff;
