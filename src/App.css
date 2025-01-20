@@ -11,3 +11,8 @@
   background: linear-gradient(rgb(3, 0, 20), rgb(15, 7, 40));
 }
 
+.app-wrapper a {
+  text-decoration: none;
+  color: #fff;
+}
+

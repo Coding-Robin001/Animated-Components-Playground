@@ -3,7 +3,7 @@ import FanPage from './pages/fanPage'
 import SideBar from './component/sidebar/SideBar'
 import PendulumPage from './pages/PendulumPage'
 import AnimatedColorCodeGenerator from "./coreComponents/AnimatedColorGenerator/ColorCodeGenerator"
-
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
@@ -12,9 +12,14 @@ function App() {
       <div className="app-wrapper">
         <SideBar />
         <div className="componentContainer">
-          <FanPage />
-          <PendulumPage/>
-          <AnimatedColorCodeGenerator/>
+          <div className='app-container'>
+            <Routes>
+              <Route path="/" element={<FanPage />} />
+              <Route path="/fanSimulator" element={<FanPage />} />
+              <Route path="/swingingPendulum" element={<PendulumPage />} />
+              <Route path="/colorGenerator" element={<AnimatedColorCodeGenerator />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </>

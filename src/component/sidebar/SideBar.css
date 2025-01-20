@@ -4,8 +4,9 @@
     top: 0;
     height: 100%;
     width: 190px;
-    background-color: #646262;
+    background-color: #fff;
     z-index: 500;
+    border: 1px solid #fff;
 }
 
 .SideBarContainer .sidebarNav{
@@ -16,15 +17,19 @@
 }
 
 .SideBarContainer .sidebarNav h3{
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     border: 1px solid gray;
     padding: 0.7rem 0.4rem;
-    color: #020322;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+    color: #020322;
 }
 
 .SideBarContainer .sidebarNav h3:hover{
     color: #003a91;
-
 }
+
+.SideBarContainer .sidebarNav h3.active{
+    color: #003a91;
+    font-weight: 700;
+} 
