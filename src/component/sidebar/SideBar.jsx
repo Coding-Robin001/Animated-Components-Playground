@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./SideBar.css"
 import { Link } from 'react-router-dom'
+import { PiGooglePlayLogoThin } from "react-icons/pi";
 
 const SideBar = () => {
 
@@ -18,7 +19,6 @@ const SideBar = () => {
 
   return (
     <div className='SideBarContainer'>
-      <Link to="/"><p>playlogo</p></Link>
       <div className='sidebarNav'>
         {
           sidEbarLinks.map((singleLink) => (

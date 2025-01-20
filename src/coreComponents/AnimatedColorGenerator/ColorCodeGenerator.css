@@ -1,9 +1,12 @@
 .codeGeneratorContainer {
     position: relative;
+    padding: 2rem 0;
 }
 
 .codeGeneratorContainer h2 {
     text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
 }
 
 .codeGeneratorContainer .mainColorBoxWrapper {
