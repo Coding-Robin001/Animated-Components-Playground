@@ -9,6 +9,8 @@ const SideBar = () => {
     { id: 0, name: "Fan Simulator", link: "/fanSimulator" },
     { id: 1, name: "Pendulum Swing", link: "/swingingPendulum" },
     { id: 2, name: "Animated hex Color Generator", link: "/colorGenerator" },
+    { id: 3, name: "Rotating Cube", link: "/rotatingCube" },
+    { id: 4, name: "3D Scene", link: "/scene" },
   ]
 
   const [active, setActive] = useState(0)
