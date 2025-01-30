@@ -1,0 +1,106 @@
+/* Set up the solar system container */
+.solar-system {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 30s infinite linear; /* Infinite rotation for the whole system */
+  }
+  
+  /* Sun styling */
+  .sun {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
+    z-index: 10;
+  }
+  
+  /* Planet styling */
+  .planet {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 5;
+    animation-timing-function: linear;
+  }
+  
+  /* Specific planet sizes and colors */
+  .orbit-1 .planet-inner {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff5733; /* Red-orange */
+  }
+  
+  .orbit-2 .planet-inner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #33aaff; /* Light blue */
+  }
+  
+  .orbit-3 .planet-inner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8e44ad; /* Purple */
+  }
+  
+  .orbit-4 .planet-inner {
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+    background-color: #27ae60; /* Green */
+  }
+  
+  /* Orbit animation to simulate planets orbiting around the sun */
+  .orbit-1 {
+    animation: orbit 5s infinite;
+  }
+  
+  .orbit-2 {
+    animation: orbit 8s infinite;
+  }
+  
+  .orbit-3 {
+    animation: orbit 12s infinite;
+  }
+  
+  .orbit-4 {
+    animation: orbit 15s infinite;
+  }
+  
+  /* Orbit animation: planets move around the sun */
+  @keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateX(100px); /* Distance of orbit-1 */
+    }
+    100% {
+      transform: rotate(360deg) translateX(100px);
+    }
+  }
+  
+  .orbit-2 {
+    animation: orbit 8s infinite;
+  }
+  
+  .orbit-3 {
+    animation: orbit 12s infinite;
+  }
+  
+  .orbit-4 {
+    animation: orbit 15s infinite;
+  }
+  
+  /* Rotate the entire solar system to simulate the movement of all planets */
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

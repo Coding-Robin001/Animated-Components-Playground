@@ -12,7 +12,7 @@ const RotatingCube = () => {
 
   return (
     <div className="">
-      <div className="w-full h-96">
+      <div className="">
         <Canvas>
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
@@ -26,7 +26,7 @@ const RotatingCube = () => {
         </Canvas>
       </div>
 
-      <div className="mt-4 flex space-x-4">
+      <div className="">
         <button style={{backgroundColor:"red", width:"300px"}} onClick={handleRotateLeft}>Rotate left</button>
         <button onClick={handleRotateRight}>Rotate right</button>
       </div>

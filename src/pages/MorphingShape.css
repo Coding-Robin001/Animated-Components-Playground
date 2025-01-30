@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6347; /* Tomato color for the shape */
+  transition: all 1s ease-in-out;
+}
+
+/* Shape-specific styles */
+.circle {
+  border-radius: 50%; /* Circle shape */
+}
+
+.square {
+  border-radius: 0%; /* Square shape */
+}
+
+.triangle {
+  /* Triangle shape using clip-path */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #ff6347; /* Tomato color for triangle */
+}
+
+.hexagon {
+  /* Hexagon shape using clip-path */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #ff6347; /* Hexagon color */
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin-top: 10px;
+}

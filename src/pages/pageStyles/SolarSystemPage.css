@@ -1,0 +1,11 @@
+.solarContainer {
+    height: 100vh;
+    padding-top: 3rem;
+}
+
+
+.solarContainer .title {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+}
