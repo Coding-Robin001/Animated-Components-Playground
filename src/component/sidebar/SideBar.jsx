@@ -11,7 +11,10 @@ const SideBar = () => {
     { id: 2, name: "Animated hex Color Generator", link: "/colorGenerator" },
     { id: 3, name: "Solar System Visualizer", link: "/solarSystem" },
     { id: 4, name: "3D Scene", link: "/scene" },
+    { id: 5, name: "3D fox", link: "/3dFox" },
   ]
+
+
 
   const [active, setActive] = useState(0)
 

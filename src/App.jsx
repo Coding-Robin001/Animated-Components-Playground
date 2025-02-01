@@ -10,6 +10,7 @@ import ScenePage from './pages/3dScenePage'
 // import MorphingShape from './pages/MorphinShaoes'
 // import FloatingBubbles from './pages/FloatingBubbles'
 import SolarSystemPage from './pages/SolarSystemPage'
+import FoxPage from './pages/foxPage'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
               <Route path="/colorGenerator" element={<AnimatedColorCodeGenerator />} />
               <Route path="/solarSystem" element={<SolarSystemPage />} />
               <Route path="/scene" element={<ScenePage />} />
+              <Route path="/3dFox" element={<FoxPage/>} />
             </Routes>
           </div>
 
