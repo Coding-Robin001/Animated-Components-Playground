@@ -1,10 +1,6 @@
 
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-// import { useFrame, useThree } from "@react-three/fiber"
-// import { a } from "@react-spring/three"
-
-// import foxScene from "../assets/3d/fox.glb"
 import FoxScene from "../assets/3d/fox.glb"
 
 
@@ -18,6 +14,8 @@ const Fox = ({ currentAnimation, ...props }) => {
 
   useEffect(() => {
     Object.values(actions).forEach(action => action.stop())
+    console.log(nodes);
+    
 
     if (actions[currentAnimation]) {
       actions[currentAnimation].play()

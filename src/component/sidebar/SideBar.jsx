@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./SideBar.css"
 import { Link } from 'react-router-dom'
-import { PiGooglePlayLogoThin } from "react-icons/pi";
+
 
 const SideBar = () => {
 
@@ -13,7 +13,6 @@ const SideBar = () => {
     { id: 4, name: "3D Scene", link: "/scene" },
     { id: 5, name: "3D fox", link: "/3dFox" },
   ]
-
 
 
   const [active, setActive] = useState(0)

@@ -1,0 +1,22 @@
+.bubble-container {
+    border: 1px solid red;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontally center the bubbles */
+    align-items: flex-end; /* Align the bubbles to the bottom */
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+  
+  .bubble {
+    position: absolute;
+    bottom: 50%; /* Start at the bottom of the container */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 1;
+    pointer-events: none; /* Prevent bubbles from interacting with user */
+  }
+  

@@ -4,7 +4,6 @@ import SideBar from './component/sidebar/SideBar'
 import PendulumPage from './pages/PendulumPage'
 import AnimatedColorCodeGenerator from "./coreComponents/AnimatedColorGenerator/ColorCodeGenerator"
 import { Routes, Route } from 'react-router-dom'
-import RotatingCubePage from './pages/rotatingCubePage'
 import ScenePage from './pages/3dScenePage'
 // import BouncingBall from './pages/bouncingBall'
 // import MorphingShape from './pages/MorphinShaoes'
