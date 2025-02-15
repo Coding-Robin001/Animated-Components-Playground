@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Canvas } from '@react-three/fiber';
 
 import "./pageStyles/FoxPage.css"
@@ -7,8 +7,9 @@ import TextLabels from '../coreComponents/foxComponents/TextLabels';
 import ButtonsGroup from '../coreComponents/foxComponents/ButtonsGroup';
 import EnvironmentSettings from '../coreComponents/foxComponents/EnvironmentSettings';
 
-
 const FoxPage = () => {
+
+    const [currentAnimation, setCurrentAnimation] = useState("hit")
 
     return (
         <div className='foxContainer' style={{ height: "100vh" }}>

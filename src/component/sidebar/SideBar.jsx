@@ -12,6 +12,7 @@ const SideBar = () => {
     { id: 3, name: "Solar System Visualizer", link: "/solarSystem" },
     { id: 4, name: "3D Scene", link: "/scene" },
     { id: 5, name: "3D fox", link: "/3dFox" },
+    { id: 5, name: "3D fighter", link: "/3dFighter" },
   ]
 
 

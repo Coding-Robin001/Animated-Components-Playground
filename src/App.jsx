@@ -9,7 +9,8 @@ import ScenePage from './pages/3dScenePage'
 // import MorphingShape from './pages/MorphinShaoes'
 // import FloatingBubbles from './pages/FloatingBubbles'
 import SolarSystemPage from './pages/SolarSystemPage'
-import FoxPage from './pages/foxPage'
+import FighterPage from './pages/3dFighterPage'
+import FoxPage from './pages/FoxPage'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
               <Route path="/solarSystem" element={<SolarSystemPage />} />
               <Route path="/scene" element={<ScenePage />} />
               <Route path="/3dFox" element={<FoxPage/>} />
+              <Route path="/3dFighter" element={<FighterPage/>} />
             </Routes>
           </div>
 

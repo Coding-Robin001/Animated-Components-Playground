@@ -8,13 +8,11 @@ const Fox = ({ currentAnimation, ...props }) => {
 
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(FoxScene);
-  console.log(animations);
 
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
     Object.values(actions).forEach(action => action.stop())
-    console.log(nodes);
     
 
     if (actions[currentAnimation]) {

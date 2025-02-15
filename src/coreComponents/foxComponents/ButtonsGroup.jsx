@@ -25,16 +25,6 @@ const ButtonsGroup = ({ setCurrentAnimation, currentAnimation, triggerJump }) =>
                     </button>
                 </Html>
             ))}
-
-            {/* Adding the Jump button */}
-            <Html position={[1.5, -3, 0]}>
-                <button
-                    // className={`button ${ isJumping ? "active" : null}`}
-                    className={`button`}
-                >
-                    Jump
-                </button>
-            </Html>
         </>
     );
 };

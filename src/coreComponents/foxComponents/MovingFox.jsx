@@ -22,14 +22,6 @@ const MovingFox = ({ currentAnimation }) => {
     });
 
 
-    const triggerJump = () => {
-        alert("inside jump function")
-        if (!isJumping) {
-            setIsJumping(true);
-            setJumpVelocity(0.1); // Initial jump force
-        }
-    };
-
     return (
         <group ref={foxGroup} position={[0, 0.35, 0]}>
             <Fox
