@@ -8,7 +8,7 @@ export function CammyModel(props) {
   useEffect(() => {
     if (names.length > 0) {
       console.log("Available animations:", names);
-      actions[names[36]]?.play(); // Play the first animation by default
+      // actions[names[24]]?.play(); // Play the first animation by default
     } else {
       console.log("No animations found in the model.");
     }
